@@ -1,0 +1,14 @@
+.navbar-title {
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Knewave', cursive;
+}
+
+.nav-bar {
+    /*the background image should be the beautiful sea jpg*/
+    background-image: url("../media/navbar-background.jpg");
+}
+
+.signin button {
+    background-color: darkblue;
+}

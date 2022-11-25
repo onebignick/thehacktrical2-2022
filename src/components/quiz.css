@@ -1,0 +1,45 @@
+.shop-cards {
+    display: flex;
+    gap: 7px;
+}
+
+.store-btn {
+    font-size: 30px;
+    margin-right: 500px;
+    margin-left: 30px;
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgb(51, 204, 255);
+    border: none;
+
+}
+
+.fish-btn {
+    font-size: 70px;
+    margin-right: 400px;
+    background-color: rgb(51, 204, 255);
+    border: none;
+
+    font-family: 'Kaushan Script', cursive;
+}
+
+.pokedex {
+    font-size: 30px;
+    background-color: rgb(51, 204, 255);
+    border: none;
+
+    font-family: 'Kaushan Script', cursive;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    background-color: rgb(51, 204, 255);
+    margin: auto;
+    text-align: center;
+}
+
+.PageBeforeQuiz {
+    /*if pop up is triggered, it should cover this element, maybe use z-indez or smth*/
+    /*the background should be the main screen animation gif*/
+    background-image: url();
+}
