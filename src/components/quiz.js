@@ -18,18 +18,19 @@ export const Quiz = () => {
         <div className='quiz-page'>
             <Navbar className="nav-bar" bg="light" expand="lg" fixed="top">
                 <Container>
-                    <Navbar.Brand href="#home" className="navbar-title">Sharky!</Navbar.Brand>
                     <Nav className="justify-content-end">
-                        <Button className="signin button"
+                        <Button className="signin-button"
                             variant="primary">
                             Sign In
                         </Button>
                     </Nav>
+                    <Navbar.Brand href="#home" className="navbar-title">Sharky!</Navbar.Brand>
+                    
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                         <Nav className="justify-content-end">
-                            <Button variant="primary" onClick={() => setButtonPopup(true)}>Store</Button>
-                            <Button variant="primary" onClick={() => setQuizPopup(true)}>Fish</Button>
+                            <Button className="fish-btn" variant="primary" onClick={() => setQuizPopup(true)}>Fish</Button>
+                            <Button className="store-btn" variant="primary" onClick={() => setButtonPopup(true)}>Store</Button> 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -39,8 +40,10 @@ export const Quiz = () => {
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <flex className="shop-cards">
                     <CardButton
-                        title="Lorum Ipsom Dolor Sit Amen"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                        title="Bull Shark Fragments"
+                        text="
+                        10 of them!
+                        Collect 100 to add this shark to your Sharklopedia!"
                         imageLink={bullshark}
                     />
                     <CardButton

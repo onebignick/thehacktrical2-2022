@@ -10,15 +10,17 @@
     font-family: 'Kaushan Script', cursive;
     background-color: rgb(51, 204, 255);
     border: none;
+    background-color: transparent;
 
 }
 
 .fish-btn {
     font-size: 70px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
     background-color: rgb(51, 204, 255);
     border: none;
-
+    background-color: transparent;
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -26,7 +28,7 @@
     font-size: 30px;
     background-color: rgb(51, 204, 255);
     border: none;
-
+    background-color: transparent;
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -38,8 +40,9 @@
     text-align: center;
 }
 
-.PageBeforeQuiz {
-    /*if pop up is triggered, it should cover this element, maybe use z-indez or smth*/
-    /*the background should be the main screen animation gif*/
-    background-image: url();
+
+
+.navbar-title{
+    margin: left 200px;
+    margin-right: 200px;
 }
