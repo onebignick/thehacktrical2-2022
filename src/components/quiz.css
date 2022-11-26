@@ -1,12 +1,13 @@
 .shop-cards {
     display: flex;
-    gap: 7px;
+    /*gap: 7px;*/
+    background-color: rgb(102, 255, 255);
+   
 }
 
 .store-btn {
     font-size: 30px;
-    margin-right: 500px;
-    margin-left: 30px;
+    margin-right: 0px;
     font-family: 'Kaushan Script', cursive;
     background-color: rgb(51, 204, 255);
     border: none;
@@ -16,8 +17,8 @@
 
 .fish-btn {
     font-size: 70px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 100px;
     background-color: rgb(51, 204, 255);
     border: none;
     background-color: transparent;
@@ -32,20 +33,13 @@
     font-family: 'Kaushan Script', cursive;
 }
 
-.buttons {
+/*.buttons {
     width: 100%;
     display: flex;
     background-color: rgb(51, 204, 255);
     margin: auto;
     text-align: center;
-}
-
-
-
-.navbar-title{
-    margin: left 200px;
-    margin-right: 200px;
-}
+}*/
 
 .card{
     margin-top: 30px;

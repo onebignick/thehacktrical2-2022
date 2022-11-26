@@ -1,7 +1,9 @@
 .navbar-title {
-    font-size: 50px;
+    font-size: 85px;
     margin: auto;
     font-family: 'Knewave', cursive;
+    margin-left:340px;
+    color: white;
 }
 
 .nav-bar {
@@ -9,6 +11,8 @@
     background-image: url("../media/navbar-background.jpg");
 }
 
+/*not working leh*/
 .signin button {
     background-color: darkblue;
+    margin-left:0px;
 }
