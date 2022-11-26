@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { CardButton } from './card';
+
+import { FishCaughtCard } from './fishcaught-card';
 import fishingAnimation from '../media/fishing-animation.gif';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -9,8 +10,8 @@ export function QuizPopup(props) {
     return (props.trigger) ? (
         (props.result) ? (
             <div>
-                <button className="close-btn" onClick={() => props.setTrigger(false)}>X</button>
-                <CardButton
+                <button className="close-btn-fishcaught" onClick={() => props.setTrigger(false)}>X</button>
+                <FishCaughtCard
                     className="fish-card"
                     title="Fish Caught!"
                     text="You gained 100 coins"
@@ -24,10 +25,10 @@ export function QuizPopup(props) {
                 }}>
                     <Form.Select aria-label="Default select example" className="question">
                         <option>How many bones does a shark have?</option>
-                        <option value="1">200</option>
-                        <option value="1">478</option>
-                        <option value="1">145</option>
-                        <option value="0">None</option>
+                        <option value="1">136</option>
+                        <option value="1">248</option>
+                        <option value="1">52</option>
+                        <option value="0">0</option>
                     </Form.Select>
                     <Button variant="primary" type="submit" className="question-submit">
                         Submit

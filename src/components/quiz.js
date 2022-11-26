@@ -43,8 +43,8 @@ export const Quiz = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                         <Nav className="justify-content-end">
-                            <Button variant="primary" onClick={() => setButtonPopup(true)}>Store</Button>
-                            <Button variant="primary" onClick={() => { setQuizPopup(true); set_result() }}>Fish</Button>
+                            <Button className="fish-btn" variant="primary" onClick={() => { setQuizPopup(true); set_result() }}>Fish</Button>
+                            <Button className="store-btn" variant="primary" onClick={() => setButtonPopup(true)}>Store</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
