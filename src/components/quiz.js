@@ -7,6 +7,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import bullshark from '../media/bullshark.jpg'
+import sharkbait from '../media/shark bait.jpg'
+import whaleshark from '../media/whale shark.jpg'
+import hammerheadshark from '../media/hammerhead-shark.webp'
+
 
 import './quiz.css'
 import "./navbar.css"
@@ -40,23 +44,32 @@ export const Quiz = () => {
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <flex className="shop-cards">
                     <CardButton
+                        className="card"
                         title="Bull Shark Fragments"
                         text="
-                        10 of them!
-                        Collect 100 to add this shark to your Sharklopedia!"
+                        10 fragments for 500 coins!
+                        Collect 100 fragments to add this shark to your Sharklopedia."
                         imageLink={bullshark}
                     />
                     <CardButton
-                        title="Lorum Ipsom Dolor Sit Amen"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                        className="card"
+                        title="Shark Bait"
+                        text="For just 15 coins, the chances of getting a shark will increase in the next 1 hour!"
+                        imageLink={sharkbait}
                     />
                     <CardButton
-                        title="Lorum Ipsom Dolor Sit Amen"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                        className="card"
+                        title="Whale Shark Fragments"
+                        text=" 10 fragments for 500 coins!
+                        Collect 100 fragments to add this shark to your Sharklopedia."
+                        imageLink={whaleshark}
                     />
                     <CardButton
-                        title="Lorum Ipsom Dolor Sit Amen"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                        className="card most-right"
+                        title="Hammerhead Shark Fragments"
+                        text=" 10 fragments for 500 coins!
+                        Collect 100 fragments to add this shark to your Sharklopedia."
+                        imageLink={hammerheadshark}
                     />
                 </flex>
             </Popup>

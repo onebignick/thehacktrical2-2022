@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './quiz.css'
 
 export function CardButton(props) {
     return (
@@ -10,7 +11,7 @@ export function CardButton(props) {
                 <Card.Text>
                     {props.text}
                 </Card.Text>
-                <Button variant="primary">Buy</Button>
+                <Button  className="Buy-btn" variant="primary">Buy</Button>
             </Card.Body>
         </Card>
     );
