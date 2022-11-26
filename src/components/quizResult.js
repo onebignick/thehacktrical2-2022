@@ -30,7 +30,8 @@ export function QuizPopup(props) {
                         <option value="1">52</option>
                         <option value="0">0</option>
                     </Form.Select>
-                    <Button variant="primary" type="submit" className="question-submit">
+                    <Button variant="primary" type="submit" className="question-submit" onClick={() => {window.alert('You have gained 5 shark fragments')
+                     props.setTrigger(false)}}>
                         Submit
                     </Button>
                 </Form>
