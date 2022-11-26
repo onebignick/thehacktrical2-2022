@@ -1,0 +1,14 @@
+.question{
+    width:25%;
+    border-radius:40%;
+    margin-left:20%;
+}
+
+.close-btn-question{
+    margin-left:43%;
+}
+
+.question-submit{
+    margin-left:30%;
+    margin-top: 2%;
+}
