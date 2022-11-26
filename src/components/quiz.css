@@ -4,7 +4,6 @@
     padding: 15px;
     margin: auto;
     align-items: center;
-    /*gap: 7px;*/
     background-color: rgb(102, 255, 255);
 
 }
@@ -37,20 +36,9 @@
     font-family: 'Kaushan Script', cursive;
 }
 
-/*.buttons {
-    width: 100%;
-    display: flex;
-    background-color: rgb(51, 204, 255);
-    margin: auto;
-    text-align: center;
-}*/
 
-
-/*not working leh*/
-.Buy-btn {
-    vertical-align: bottom;
-}
 
 .quiz-page {
     padding-top: 200px;
 }
+
