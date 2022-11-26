@@ -16,8 +16,14 @@ import './quiz.css'
 import "./navbar.css"
 
 export const Quiz = () => {
+
     const [buttonPopup, setButtonPopup] = useState(false);
     const [quizPopup, setQuizPopup] = useState(false);
+
+    const random_generator = () => {
+        return Math.floor(Math.random() * 3);
+    }
+
     return (
         <div className='quiz-page'>
             <Navbar className="nav-bar" bg="light" expand="lg" fixed="top">
@@ -73,7 +79,9 @@ export const Quiz = () => {
                     />
                 </flex>
             </Popup>
-            <Popup trigger={quizPopup} setTrigger={setQuizPopup}></Popup>
+            <Popup trigger={quizPopup} setTrigger={setQuizPopup}>
+
+            </Popup>
         </div>
     );
 }
