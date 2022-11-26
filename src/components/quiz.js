@@ -40,7 +40,7 @@ export const Quiz = () => {
                 </Container>
             </Navbar>
 
-            <div className='PageBeforeQuiz'></div>
+            
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <flex className="shop-cards">
                     <CardButton
