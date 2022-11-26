@@ -17,6 +17,7 @@ export function QuizPopup(props) {
                 />
             </div>) :
             <div>
+                <h1>You caught a great white shark!</h1>
                 <button className="close-btn" onClick={() => props.setTrigger(false)}>close</button>
                 <Form onSubmit={() => {
                     window.alert('You have gained x coin');
