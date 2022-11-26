@@ -19,8 +19,8 @@ export function QuizPopup(props) {
                 />
             </div>) :
             <div>
-                <h1>You've caught a great white shark!</h1>
-                <button className="close-btn" onClick={() => props.setTrigger(false)}>close</button>
+                <h1 className="question-title">You've caught a great white shark!</h1>
+                
                 <Form onSubmit={() => {
                     window.alert('You have gained 5 shark fragments');
                 }}>
