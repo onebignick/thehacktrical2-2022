@@ -2,7 +2,7 @@
     display: flex;
     /*gap: 7px;*/
     background-color: rgb(102, 255, 255);
-   
+
 }
 
 .store-btn {
@@ -41,17 +41,21 @@
     text-align: center;
 }*/
 
-.card{
+.card {
     margin-top: 30px;
-    margin-right:70px;
+    margin-right: 70px;
 }
 
 /*not working leh*/
-.card.most-right{
-    margin-right:0px
+.card.most-right {
+    margin-right: 0px
 }
 
 /*not working leh*/
-.Buy-btn{
-    vertical-align:bottom;
+.Buy-btn {
+    vertical-align: bottom;
+}
+
+.quiz-page {
+    padding-top: 200px;
 }

@@ -1,52 +1,56 @@
 import { useState } from 'react';
 import { Popup } from './popup';
 import { CardButton } from './card';
-
+import { QuizPopup } from './quizResult';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import bullshark from '../media/bullshark.jpg'
-import sharkbait from '../media/shark bait.jpg'
-import whaleshark from '../media/whale shark.jpg'
-import hammerheadshark from '../media/hammerhead-shark.webp'
-
+import bullshark from '../media/bullshark.jpg';
+import sharkbait from '../media/shark bait.jpg';
+import whaleshark from '../media/whale shark.jpg';
+import hammerheadshark from '../media/hammerhead-shark.webp';
 
 import './quiz.css'
 import "./navbar.css"
 
 export const Quiz = () => {
-
-    const [buttonPopup, setButtonPopup] = useState(false);
-    const [quizPopup, setQuizPopup] = useState(false);
-
     const random_generator = () => {
-        return Math.floor(Math.random() * 3);
+        console.log(Math.floor(Math.random() * 2));
+        return Math.floor(Math.random() * 2);
     }
 
+    const [coinNumber, setCoinNumber] = useState(0);
+    const [buttonPopup, setButtonPopup] = useState(false);
+    const [quizPopup, setQuizPopup] = useState(false);
+    const [quizResult, setQuizResult] = useState('');
+
+    const set_result = () => {
+        const stuff = random_generator();
+        if (stuff === 1) {
+            setQuizResult(true);
+        } else {
+            setQuizResult(false);
+        }
+
+    }
     return (
         <div className='quiz-page'>
             <Navbar className="nav-bar" bg="light" expand="lg" fixed="top">
                 <Container>
-                    <Nav className="justify-content-end">
-                        <Button className="signin-button"
-                            variant="primary">
-                            Sign In
-                        </Button>
-                    </Nav>
                     <Navbar.Brand href="#home" className="navbar-title">Sharky!</Navbar.Brand>
-                    
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                         <Nav className="justify-content-end">
-                            <Button className="fish-btn" variant="primary" onClick={() => setQuizPopup(true)}>Fish</Button>
-                            <Button className="store-btn" variant="primary" onClick={() => setButtonPopup(true)}>Store</Button> 
+                            <Button variant="primary" onClick={() => setButtonPopup(true)}>Store</Button>
+                            <Button variant="primary" onClick={() => { setQuizPopup(true); set_result() }}>Fish</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
-            
+
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <flex className="shop-cards">
                     <CardButton
@@ -79,9 +83,7 @@ export const Quiz = () => {
                     />
                 </flex>
             </Popup>
-            <Popup trigger={quizPopup} setTrigger={setQuizPopup}>
-
-            </Popup>
+            <QuizPopup trigger={quizPopup} setTrigger={setQuizPopup} result={quizResult} setQuizResult={setQuizResult} />
         </div>
     );
 }
