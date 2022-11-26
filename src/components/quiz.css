@@ -1,5 +1,9 @@
 .shop-cards {
     display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: auto;
+    align-items: center;
     /*gap: 7px;*/
     background-color: rgb(102, 255, 255);
 
@@ -41,15 +45,6 @@
     text-align: center;
 }*/
 
-.card {
-    margin-top: 30px;
-    margin-right: 70px;
-}
-
-/*not working leh*/
-.card.most-right {
-    margin-right: 0px
-}
 
 /*not working leh*/
 .Buy-btn {
